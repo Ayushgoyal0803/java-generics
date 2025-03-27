@@ -7,6 +7,10 @@ public class FlightManager {
         flightList.add(flight);
     }
 
+    public List<Flight<?>> getFlightList(){
+        return flightList;
+    }
+
     public void displayFlights(){
         for(Flight<?> f: flightList){
             f.displayFlightInfo();
