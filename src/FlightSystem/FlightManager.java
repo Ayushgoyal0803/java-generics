@@ -1,14 +1,14 @@
 package FlightSystem;
 import java.util.*;
 
-public class FlightManager<T extends Number> {
-    private List<Flight<T>> flightList = new ArrayList<>();
-    public void addFlight(Flight<T> flight){
+public class FlightManager {
+    private List<Flight<?>> flightList = new ArrayList<>();
+    public void addFlight(Flight<?> flight){
         flightList.add(flight);
     }
 
     public void displayFlights(){
-        for(Flight<T> f: flightList){
+        for(Flight<?> f: flightList){
             f.displayFlightInfo();
         }
     }
